@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --dark-cyan: hsl(185, 75%, 39%);
+  --very-dark-blue: hsl(229, 23%, 23%);
+  --dark-grayish-blue: hsl(227, 10%, 46%);
+  --dark-gray: hsl(0, 0%, 59%);
+  --fz: 18px;
+}
+
+body {
+  height: 100vh;
+  background: url("../images/bg-pattern-bottom.svg") var(--dark-cyan);
+  /* background-position: -280% 400%; */
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: var(--fz);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mt-2 {
+  margin-top: 0.3rem;
+}
+
+.bold {
+  font-weight: bolder;
+  color: #393b45;
+}
+
+.gray {
+  color: var(--dark-gray);
+}
+
+.capital-sm {
+  font-size: 0.7rem;
+  text-transform: capitalize;
+}
+
+.l-space {
+  letter-spacing: 2px;
+}
+
+.container {
+  width: 340px;
+  height: 390px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: white;
+}
+
+.container__head {
+  width: 100%;
+}
+
+.container__head,
+.container__head img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.container__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.container__info__img {
+  margin: 0 auto;
+  margin-top: -3.8rem;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.container__info__img img {
+  border-radius: 50%;
+  border: 5px solid white;
+}
+
+.container__info__name {
+  margin-top: 2rem;
+  text-transform: capitalize;
+  color: var(--very-dark-blue);
+  font-weight: 700;
+}
+
+.container__info__name__num {
+  color: var(--dark-gray);
+}
+
+.container__info__address {
+  margin: 0.8rem 0 2rem;
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--dark-gray);
+}
+
+.container__line {
+  width: 100%;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.container__account-info {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.container__account-info__followers,
+.container__account-info__likes,
+.container__account-info__photos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.attribution {
+  display: none;
+}
