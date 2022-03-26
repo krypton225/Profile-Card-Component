@@ -16,8 +16,10 @@
 
 body {
   height: 100vh;
+  position: relative;
   background: url("../images/bg-pattern-bottom.svg") var(--dark-cyan);
-  /* background-position: -280% 400%; */
+  /* background-position: bottom center; */
+  background-position: -361px 382px;
   font-family: "Kumbh Sans", sans-serif;
   font-size: var(--fz);
   display: flex;
